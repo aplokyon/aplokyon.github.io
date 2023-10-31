@@ -1,0 +1,208 @@
+body {
+  background-image: radial-gradient(circle at top left, #ffc2fa, #affaff);
+  background-repeat: no-repeat;
+  position: relative;
+  /* isolation: isolate; */
+}
+
+.svg {
+  position: absolute;
+  z-index: -1;
+  margin: 0;
+}
+
+p, a, h1, h2 {
+  font-family: 'Play', sans-serif;
+}
+
+p {
+  font-size: 17px;
+}
+
+h1 {
+  font-size: 29px;
+  color: #1e262b;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+.holy-grail {
+	min-height: 100vh;
+}
+
+.holy-grail,
+.holy-grail-body {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+}
+
+.holy-grail-content {
+	flex: 1 1 auto;
+}
+
+.holy-grail-sidebar-1 {
+	order: -1;
+}
+
+@media (min-width: 768px) {
+	.holy-grail-body {
+		flex-direction: row;
+	}
+
+	.hg-sidebar {
+		flex: 0 0 260px;
+	}
+}
+
+nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 0px 2px 0px #b1b1b1;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 1s;
+}
+
+nav ul li a:after,
+nav ul li a:before {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+nav ul li a:hover {
+  color: #33a2d6;
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+
+body a {
+  text-decoration: none;
+  color: #41535e;
+  font-weight: bold;
+}
+
+.contacts {
+  display: flex;
+  margin: 120px auto;
+  width: 1200px;
+  max-height: 600px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.bc {
+  left: 10%;
+  top: 4%;
+}
+
+.be {
+  top: 15%;
+  right: 5%;
+}
+
+.bex {
+  top: 14%;
+  right: 13%;
+}
+
+.bs {
+  top: 30%;
+  right: 1%;
+}
+
+.div-contacts {
+  min-width: 50%;
+}
+
+.div-img {
+  margin: 0;
+  align-self: center;
+  justify-self: right;
+}
+
+.div-img img{
+  border-radius: 50px;
+  border: 1px solid rgb(145, 210, 247);
+}
+
+.education {
+  width: 1200px;
+  margin: 120px auto;
+  text-align: right;
+}
+
+.div-edu {
+  margin-left: 700px;
+  width: 500px;
+}
+
+.experience {
+  display: flex;
+  width: 1200px;
+  margin: 240px auto 120px;
+  justify-content: left;
+  text-align: left;
+}
+
+.div-exp {
+  width: 400px;
+}
+
+.skills {
+  width: 1300px;
+  margin-left: 100px;
+}
+
+.hobby {
+  display: flex;
+  flex-flow: column;
+  width: 1200px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+.hobby-text {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.div-hobby-main {
+  width: 500px;
+  height: 700px;
+  justify-self: left;
+}
+
+.div-hobby-alt {
+  height: 700px;
+  width: 500px;
+  align-self: flex-end;
+}
